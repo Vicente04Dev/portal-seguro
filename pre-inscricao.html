@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pré-inscrição | Colégio Portal Seguro</title>
+<meta name="description" content="Pré-inscreva o seu filho no Colégio Portal Seguro, Topo do Camama, Luanda. Quatro passos curtos.">
+<meta name="robots" content="noindex, nofollow"><!-- versão de validação: remover quando o site for publicado a sério -->
+<meta name="theme-color" content="#10263F">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_AO">
+<meta property="og:site_name" content="Colégio Portal Seguro">
+<meta property="og:title" content="Pré-inscrição | Colégio Portal Seguro">
+<meta property="og:description" content="Pré-inscreva o seu filho no Colégio Portal Seguro, Topo do Camama, Luanda. Quatro passos curtos.">
+<meta property="og:url" content="https://SEU-UTILIZADOR.github.io/NOME-DO-REPOSITORIO/pre-inscricao.html">
+<meta property="og:image" content="https://SEU-UTILIZADOR.github.io/NOME-DO-REPOSITORIO/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Gabarito:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+<div class="pv"><div class="wrap"><b>Versão de validação v0.4.</b> Textos, níveis, idades e opções dos formulários são fictícios, só para teste. Os formulários não enviam dados.</div></div>
+<header class="site">
+ <div class="wrap bar">
+  <a class="brand" href="index.html" aria-label="Colégio Portal Seguro, página inicial"><img src="assets/img/logo-portal-seguro-sem-legenda.svg" alt="Portal Seguro" width="126" height="58"></a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Principal">
+   <ul>
+    <li><a href="index.html">Início</a></li><li><a href="colegio.html">O colégio</a></li><li><a href="oferta-educativa.html">Oferta educativa</a></li><li><a href="vida-escolar.html">Vida escolar</a></li><li><a href="contactos.html">Contactos</a></li>
+    <li><a class="btn btn-gate" href="pre-inscricao.html" aria-current="page">Pré-inscrição</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+<main id="conteudo">
+<section class="blk b-blue" style="padding-top:clamp(2.5rem,6vw,4.5rem)">
+ <div class="wrap pre">
+  <div>
+   <p class="crumbs"><a href="index.html">Início</a> <span>/ Pré-inscrição</span></p>
+   <h1 style="font-size:clamp(2.4rem,6vw,4rem);font-weight:800;margin:.1em 0 .3em">Pré-inscreva o seu filho</h1>
+   <p>São quatro passos curtos. Depois de enviar, a secretaria contacta o encarregado de educação pelo canal que indicar.</p>
+   <p>Pedimos só o necessário. Não escreva dados de saúde nem números de documentos.</p>
+  </div>
+
+  <form class="sheet" id="pre" novalidate aria-labelledby="ftitle">
+   <div class="sh">
+    <div class="top"><div><h2 id="ftitle" style="font-size:1.55rem;margin:0;color:#fff">Ficha de pré-inscrição</h2><p id="passo" aria-live="polite"></p></div>
+    <button type="button" class="teste" id="fill">Preencher com dados de teste</button></div>
+    <ol class="steps" aria-hidden="true"><li><b>1</b><span>Aluno</span></li><li><b>2</b><span>Encarregado</span></li><li><b>3</b><span>2.º responsável</span></li><li><b>4</b><span>Confirmar</span></li></ol>
+   </div>
+   <div class="sb">
+   <fieldset class="show">
+    <h3 class="grp">Dados do aluno</h3><p class="gsub">Como consta no documento de identificação da criança.</p>
+    <div class="f"><label for="aluno">Nome completo <span class="req">*</span></label><input id="aluno" autocomplete="off" required placeholder="Ex.: Ana Beatriz Fernandes"><div class="err">Escreva o nome completo do aluno.</div></div>
+    <div class="row">
+     <div class="f"><label for="nasc">Data de nascimento <span class="req">*</span></label><input id="nasc" type="date" required><div class="err">Indique uma data de nascimento válida (não pode ser futura).</div></div>
+     <div class="f"><span class="lb" id="lsexo">Sexo</span><div class="seg" role="radiogroup" aria-labelledby="lsexo"><label><input type="radio" name="sexo" value="Feminino"><span>Feminino</span></label><label><input type="radio" name="sexo" value="Masculino"><span>Masculino</span></label></div></div>
+    </div>
+    <div class="row">
+     <div class="f"><label for="classe">Classe pretendida <span class="req">*</span></label><select id="classe" required></select><div class="err">Escolha a classe pretendida.</div></div>
+     <div class="f"><label for="ano">Ano lectivo <span class="req">*</span></label><select id="ano" required></select><div class="err">Escolha o ano lectivo.</div></div>
+    </div>
+    <div class="f"><label for="escola">Escola actual (se houver)</label><input id="escola" autocomplete="off" placeholder="Ex.: Infantário Pequenos Passos"></div>
+   </fieldset>
+
+   <fieldset>
+    <h3 class="grp">Encarregado de educação</h3><p class="gsub">A pessoa que a secretaria vai contactar.</p>
+    <div class="f"><label for="enc">Nome completo <span class="req">*</span></label><input id="enc" autocomplete="name" required placeholder="Ex.: Maria da Conceição Fernandes"><div class="err">Escreva o nome do encarregado.</div></div>
+    <div class="row">
+     <div class="f"><label for="par">Parentesco com o aluno <span class="req">*</span></label><select id="par" required></select><div class="err">Indique o parentesco.</div></div>
+     <div class="f"><label for="nac">Nacionalidade</label><select id="nac"></select></div>
+    </div>
+    <div class="row">
+     <div class="f"><label for="tel">Telefone <span class="req">*</span></label><input id="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="9XX XXX XXX" required><div class="err">Número inválido. Use 9 dígitos a começar por 9, com ou sem +244.</div></div>
+     <div class="f"><label for="mail">E-mail (opcional)</label><input id="mail" type="email" autocomplete="email" placeholder="nome@exemplo.com"><div class="err">E-mail inválido. Exemplo: nome@exemplo.com</div></div>
+    </div>
+    <div class="f"><span class="lb" id="lcanal">Como prefere ser contactado</span><div class="seg" role="radiogroup" aria-labelledby="lcanal"><label><input type="radio" name="canal" value="Chamada" checked><span>Chamada</span></label><label><input type="radio" name="canal" value="WhatsApp"><span>WhatsApp</span></label><label><input type="radio" name="canal" value="E-mail"><span>E-mail</span></label></div></div>
+   </fieldset>
+
+   <fieldset>
+    <h3 class="grp">Segundo responsável</h3><p class="gsub">Opcional. Pode avançar sem preencher.</p>
+    <div class="chk f"><input type="checkbox" id="add2"><label for="add2">Quero indicar um segundo responsável</label></div>
+    <div id="seg" hidden>
+     <div class="f"><label for="n2">Nome completo</label><input id="n2" placeholder="Ex.: Paulo Jorge Fernandes"></div>
+     <div class="row">
+      <div class="f"><label for="p2">Parentesco</label><select id="p2"></select></div>
+      <div class="f"><label for="t2">Telefone</label><input id="t2" type="tel" inputmode="tel" placeholder="9XX XXX XXX"><div class="err">Número inválido. Use 9 dígitos a começar por 9.</div></div>
+     </div>
+    </div>
+   </fieldset>
+
+   <fieldset>
+    <h3 class="grp">Confirme os dados</h3><p class="gsub">Reveja antes de enviar.</p>
+    <dl class="resumo" id="resumo"></dl>
+    <div class="f"><label for="obs">Observações (opcional)</label><textarea id="obs" placeholder="Algo que a secretaria deva saber?"></textarea><p class="hint">Não escreva aqui dados de saúde nem números de documentos.</p></div>
+    <div class="chk f"><input type="checkbox" id="ok" required><label for="ok">Autorizo o colégio a usar estes dados para responder à pré-inscrição. <a href="privacidade.html" target="_blank" rel="noopener">Ler a política de privacidade</a> <span class="req">*</span></label></div>
+    <div class="err" id="okerr">Marque a autorização para poder enviar.</div>
+   </fieldset>
+
+   <div class="acoes">
+    <button type="button" class="btn btn-ink" id="prev" hidden>Voltar</button>
+    <button type="button" class="btn btn-gate" id="next" style="margin-left:auto">Continuar</button>
+   </div>
+   </div>
+  </form>
+ </div>
+</section>
+</main>
+<footer class="site">
+ <div class="slats" aria-hidden="true"></div>
+ <div class="wrap in">
+  <div><h3>Colégio Portal Seguro</h3><p>Topo do Camama, Camama, Luanda, Angola.<br>Telefone <a href="tel:+244939469091">+244 939 469 091</a></p></div>
+  <div><h3>Páginas</h3><ul><li><a href="colegio.html">O colégio</a></li><li><a href="oferta-educativa.html">Oferta educativa</a></li><li><a href="vida-escolar.html">Vida escolar</a></li><li><a href="pre-inscricao.html">Pré-inscrição</a></li><li><a href="contactos.html">Contactos</a></li></ul></div>
+  <div><h3>Mais</h3><ul><li><a href="https://www.facebook.com/rigoremodernidade/" target="_blank" rel="noopener">Facebook</a></li><li><a href="privacidade.html">Política de privacidade</a></li></ul></div>
+ </div>
+ <div class="wrap"><p class="copy">© 2026 Colégio Portal Seguro. Versão de validação v0.4, conteúdo provisório.</p></div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
